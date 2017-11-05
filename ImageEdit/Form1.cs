@@ -157,5 +157,17 @@ namespace ImageEdit
                 }
             }
         }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var whd = new WidthHeightDialog(200, 200);
+            var result = whd.ShowDialog(this);
+            if (result == DialogResult.OK)
+            {
+                OriginalImage?.Dispose();
+                OriginalImage = new Bitmap(whd.SelectedWidth, whd.SelectedHeight);
+                ComputeAndShow();
+            }
+        }
     }
 }
