@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bloom.cs" />
     <Compile Include="Grayscale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepia.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ImageEdit\ImageEdit.csproj">
